@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sành Mobile</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Trang Chủ</a></li>
+                <li><a href="#">Sản Phẩm</a></li>
+                <li><a href="#">Khuyến Mãi</a></li>
+                <li><a href="#">Tin Tức</a></li>
+                <li><a href="#">Liên Hệ</a></li>
+                <li><a href="#" class="login-btn">Đăng Nhập</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Tìm kiếm sản phẩm...">
+            <button id="search-btn">Tìm</button>
+        </div>
+    </header>
+
+    <main>
+        
+        <button id="open-cart-btn">Xem Giỏ Hàng</button>
+
+        <div id="slideshow">
+            <img id="slide-image" src="https://via.placeholder.com/600x300" alt="Slideshow">
+        </div>
+        <section id="flash-sale">
+            <img src="sale.png" alt="Flash Sale" id="flash-sale-title">
+            <p id="flash-sale-timer">Thời gian còn lại: <span id="countdown"></span></p>
+            <div id="flash-sale-products"></div>
+        </section>
+        
+
+        <div id="product-list"></div>
+
+        <!-- Modal Giỏ Hàng -->
+        <div id="cart-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" id="close-cart-btn">&times;</span>
+                <h2>Giỏ Hàng</h2>
+                <ul id="cart-items"></ul>
+                <p>Tổng Tiền: <span id="total-price">0</span> VNĐ</p>
+                <button id="checkout-btn">Thanh Toán</button>
+            </div>
+        </div>
+
+        <!-- Modal Đăng Nhập -->
+        <div id="login-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" id="close-login-btn">&times;</span>
+                <h2>Đăng Nhập</h2>
+                <form id="login-form">
+                    <div class="input-container">
+                        <label for="username">Tên đăng nhập:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    
+                    <div class="input-container">
+                        <label for="password">Mật khẩu:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    
+                    <button type="submit">Đăng Nhập</button>
+                </form>
+            </div>
+        </div>
+
+        <section id="contact">
+            <h2>Liên Hệ Chúng Tôi</h2>
+            <p>Nếu bạn có bất kỳ câu hỏi nào, hãy liên hệ với chúng tôi qua email: <a href="mailto:tuanbeodayy@gmail.com">tuanbeodayy@gmail.com</a></p>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
